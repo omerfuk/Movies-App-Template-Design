@@ -16,6 +16,13 @@
 		DE3D2F6E281406C6009F5EE4 /* Movies_App_Template_DesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F6D281406C6009F5EE4 /* Movies_App_Template_DesignTests.swift */; };
 		DE3D2F78281406C6009F5EE4 /* Movies_App_Template_DesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F77281406C6009F5EE4 /* Movies_App_Template_DesignUITests.swift */; };
 		DE3D2F7A281406C6009F5EE4 /* Movies_App_Template_DesignUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F79281406C6009F5EE4 /* Movies_App_Template_DesignUITestsLaunchTests.swift */; };
+		DE3D2F87281407B6009F5EE4 /* KategoriHucreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F86281407B6009F5EE4 /* KategoriHucreTableViewCell.swift */; };
+		DE3D2F8928140976009F5EE4 /* FilmHucreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F8828140975009F5EE4 /* FilmHucreCollectionViewCell.swift */; };
+		DE3D2F8B28140BF2009F5EE4 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F8A28140BF2009F5EE4 /* FilmViewController.swift */; };
+		DE3D2F8D28140BFE009F5EE4 /* FilmDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F8C28140BFE009F5EE4 /* FilmDetayViewController.swift */; };
+		DE3D2F9328140D48009F5EE4 /* Kategoriler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F9228140D48009F5EE4 /* Kategoriler.swift */; };
+		DE3D2F9528140D84009F5EE4 /* Yonetmenler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F9428140D84009F5EE4 /* Yonetmenler.swift */; };
+		DE3D2F9728140DB8009F5EE4 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D2F9628140DB8009F5EE4 /* Filmler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		DE3D2F73281406C6009F5EE4 /* Movies-App-Template-DesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movies-App-Template-DesignUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3D2F77281406C6009F5EE4 /* Movies_App_Template_DesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_App_Template_DesignUITests.swift; sourceTree = "<group>"; };
 		DE3D2F79281406C6009F5EE4 /* Movies_App_Template_DesignUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_App_Template_DesignUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE3D2F86281407B6009F5EE4 /* KategoriHucreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriHucreTableViewCell.swift; sourceTree = "<group>"; };
+		DE3D2F8828140975009F5EE4 /* FilmHucreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHucreCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE3D2F8A28140BF2009F5EE4 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		DE3D2F8C28140BFE009F5EE4 /* FilmDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetayViewController.swift; sourceTree = "<group>"; };
+		DE3D2F9228140D48009F5EE4 /* Kategoriler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategoriler.swift; sourceTree = "<group>"; };
+		DE3D2F9428140D84009F5EE4 /* Yonetmenler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonetmenler.swift; sourceTree = "<group>"; };
+		DE3D2F9628140DB8009F5EE4 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,14 @@
 		DE3D2F55281406C4009F5EE4 /* Movies-App-Template-Design */ = {
 			isa = PBXGroup;
 			children = (
+				DE3D2F8E28140C1A009F5EE4 /* Controllers */,
+				DE3D2F9028140C38009F5EE4 /* Cells */,
+				DE3D2F9128140C3F009F5EE4 /* View */,
+				DE3D2F9228140D48009F5EE4 /* Kategoriler.swift */,
+				DE3D2F9428140D84009F5EE4 /* Yonetmenler.swift */,
+				DE3D2F9628140DB8009F5EE4 /* Filmler.swift */,
 				DE3D2F56281406C4009F5EE4 /* AppDelegate.swift */,
 				DE3D2F58281406C4009F5EE4 /* SceneDelegate.swift */,
-				DE3D2F5A281406C4009F5EE4 /* ViewController.swift */,
-				DE3D2F5C281406C4009F5EE4 /* Main.storyboard */,
 				DE3D2F5F281406C6009F5EE4 /* Assets.xcassets */,
 				DE3D2F61281406C6009F5EE4 /* LaunchScreen.storyboard */,
 				DE3D2F64281406C6009F5EE4 /* Info.plist */,
@@ -125,6 +143,33 @@
 				DE3D2F79281406C6009F5EE4 /* Movies_App_Template_DesignUITestsLaunchTests.swift */,
 			);
 			path = "Movies-App-Template-DesignUITests";
+			sourceTree = "<group>";
+		};
+		DE3D2F8E28140C1A009F5EE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D2F5A281406C4009F5EE4 /* ViewController.swift */,
+				DE3D2F8A28140BF2009F5EE4 /* FilmViewController.swift */,
+				DE3D2F8C28140BFE009F5EE4 /* FilmDetayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE3D2F9028140C38009F5EE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D2F86281407B6009F5EE4 /* KategoriHucreTableViewCell.swift */,
+				DE3D2F8828140975009F5EE4 /* FilmHucreCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE3D2F9128140C3F009F5EE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D2F5C281406C4009F5EE4 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3D2F9528140D84009F5EE4 /* Yonetmenler.swift in Sources */,
 				DE3D2F5B281406C4009F5EE4 /* ViewController.swift in Sources */,
+				DE3D2F8928140976009F5EE4 /* FilmHucreCollectionViewCell.swift in Sources */,
+				DE3D2F9728140DB8009F5EE4 /* Filmler.swift in Sources */,
 				DE3D2F57281406C4009F5EE4 /* AppDelegate.swift in Sources */,
+				DE3D2F8D28140BFE009F5EE4 /* FilmDetayViewController.swift in Sources */,
+				DE3D2F87281407B6009F5EE4 /* KategoriHucreTableViewCell.swift in Sources */,
+				DE3D2F9328140D48009F5EE4 /* Kategoriler.swift in Sources */,
+				DE3D2F8B28140BF2009F5EE4 /* FilmViewController.swift in Sources */,
 				DE3D2F59281406C4009F5EE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
