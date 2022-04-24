@@ -15,19 +15,48 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        veriTabaniKopyala()
 
-        let k1 = Kategoriler(kategori_id: 1, kategori_ad: "Dram")
-        let k2 = Kategoriler(kategori_id: 2, kategori_ad: "Bilim Kurgu")
-        
-        
-        kategorilerListe.append(k1)
-        kategorilerListe.append(k2)
+        kategorilerListe = Kategorilerdao().tumKategorilerAl()
         
         kategoriTableView.dataSource = self
         kategoriTableView.delegate = self
         
         
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indeks = sender as? Int
+        
+        let gidilecekVC = segue.destination as! FilmViewController
+        
+        gidilecekVC.kategori = kategorilerListe[indeks!]
+    }
+    
+    func veriTabaniKopyala(){
+        
+        let bundleYolu = Bundle.main.path(forResource: "filmler", ofType: ".sqlite")
+        
+        let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        
+        let fileManager = FileManager.default
+        
+        let kopyalanacakYer = URL(fileURLWithPath: hedefYol).appendingPathComponent("filmler.sqlite")
+        
+        if fileManager.fileExists(atPath: kopyalanacakYer.path){
+            print("Veri Tabanı zaten var, kopyalamaya gerek yok.")
+        }
+        else{
+            do {
+                try fileManager.copyItem(atPath: bundleYolu!, toPath: kopyalanacakYer.path)
+                
+            } catch  {
+                print(error)
+            }
+        }
+        
+        
     }
 
 }

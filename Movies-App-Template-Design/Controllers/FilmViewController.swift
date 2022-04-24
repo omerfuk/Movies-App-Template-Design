@@ -12,18 +12,17 @@ class FilmViewController: UIViewController {
     @IBOutlet weak var filmCollectionView: UICollectionView!
     var filmListesi = [Filmler]()
     
+    var kategori:Kategoriler?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let f1 = Filmler(film_id: 1, film_ad: "Django", film_yil: 2012, film_resim: "django", kategori: Kategoriler(), yonetmen: Yonetmenler())
-        
-        
-        let f2 = Filmler(film_id: 2, film_ad: "Inception", film_yil: 2010, film_resim: "inception", kategori: Kategoriler(), yonetmen: Yonetmenler())
-        
-        filmListesi.append(f1)
-        filmListesi.append(f2)
+        if let k = kategori {
+            navigationItem.title = k.kategori_ad
+            
+            filmListesi = Filmlerdao().filmlerAl(kategori_id: k.kategori_id!)
+        }
         
         filmCollectionView.delegate = self
         filmCollectionView.dataSource = self
@@ -44,6 +43,14 @@ class FilmViewController: UIViewController {
         filmCollectionView.collectionViewLayout = tasarim
 
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indeks = sender as? Int
+        
+        let gidilecekVC = segue.destination as! FilmDetayViewController
+        
+        gidilecekVC.film = filmListesi[indeks!]
     }
  
 
